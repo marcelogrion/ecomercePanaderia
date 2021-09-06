@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 182, 193, 0.3);
+    padding: 10px;
+    margin-top: 0;
+}
+p{
+    margin-bottom: 0.5rem!important;
+    font-size: 0.8rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 2.3rem;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+figure {
+    width: auto!important;
+}
+.btn{
+    padding: 0.2rem 0.6rem 0.4rem!important;
+}
+.card{
+    border: 0!important;
+}
