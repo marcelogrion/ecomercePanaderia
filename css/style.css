@@ -1,43 +1,60 @@
+/* phone-portrait */
+@import url("menu-mobile.css") only screen and (max-width : 567px);
+@import url("menu-desktop.css") only screen and (min-width: 568px);
+
 * {
-    margin: 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
-h1{
-    margin: 0;
-    padding: 0;
+
+p {
+    margin-bottom: 0.5rem !important;
+    font-size    : 0.8rem;
 }
-header{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 182, 193, 0.3);
-    padding: 10px;
-    margin-top: 0;
+
+@media (max-width:567px) {
+    main {
+        padding-top: 80px;
+    }
+    .productos {
+        padding-top: 5.6rem!important;
+    }
+    #contactar {
+    padding-top: 5rem;
+    }
 }
-p{
-    margin-bottom: 0.5rem!important;
-    font-size: 0.8rem;
+@media (min-width:568px) {
+    main {
+        padding-top: 60px;
+    }
 }
-form {
-    display: flex;
-    flex-direction: column;
-}
-.titulo{
+
+.titulo {
     font-family: 'Pattaya', sans-serif;
-    font-size: 2.3rem;
 }
-.productos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
+
+
+/* Targuets */
+
+#acercade {
+    display: none;
+
 }
-figure {
-    width: auto!important;
+#acercade:target {
+    display: block;   
 }
-.btn{
-    padding: 0.2rem 0.6rem 0.4rem!important;
+
+#mproductos {
+    display: none;
+
 }
-.card{
-    border: 0!important;
+#mproductos:target {
+    display: block;   
+}
+#contactar {
+    display: none;
+}
+#contactar:target {
+    display: block;
 }

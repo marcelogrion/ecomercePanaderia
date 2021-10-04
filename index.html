@@ -14,15 +14,37 @@
 </head>
 
 <body>
-
     <header>
         <h1 class="titulo pt-1">Panaderia</h1>
     </header>
-    <main>
+    <nav>
+        <ul>
+            <li id="nosotros"><a href="#acercade">nosotros</a></li>
+            <li id="productos"><a href="#mproductos">productos</a></li>
+            <li id="servicios"><a href="#">servicios</a></li>
+            <li id="contacto"><a href="#contactar">contacto</a></li>
+            <!-- el anchor va ultimo o dentro, el li tiene mas prioridad, importante para SEO -->
+        </ul>
+    </nav>
+    <main class="px-2" id="acercade">
 
-        <section class="productos">
-            <figure class="card p-1 m-1">
-                <img class="card-img-top" src="img/cupcake.jpg" alt="Cupcake">
+        <h2>Acerca de nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque nulla adipisci aliquam culpa praesentium
+            repudiandae, quisquam ab non amet omnis error, necessitatibus rem maiores voluptatum incidunt quae
+            blanditiis eligendi.
+            Repudiandae quam porro, praesentium natus doloremque maiores aut asperiores eveniet perferendis quaerat?
+            Amet, est quos necessitatibus voluptatum enim adipisci illum, eligendi reprehenderit in, distinctio ipsam
+            quo officia nostrum perferendis obcaecati?
+            Quod illum eum accusantium hic rem fugiat, illo in voluptatum voluptates. Deserunt sapiente in nisi id
+            veniam. Laborum neque at minima! Rerum ex vel ipsum quod quam harum provident dolore!
+            Excea ullam at dolorum nobis hic nesciunt consequuntur, doloribus, excepturi dicta perferendis odit commodi
+            asperiores fugiat! Dolorum laudantium ipsam beatae dicta ipsum sit molestias.</p>
+
+    </main>
+    <section class="productos container p-3" id="mproductos">
+        <div class="row ">
+            <figure class="card col-12 col-sm-6 col-md-3">
+                <img class="card-img-top img-fluid" src="img/cupcake.jpg" alt="Cupcake">
                 <figcaption class="card-body col-auto text-center p-1">
                     <h5 id="cupcakeHTML" class="card-title m-0"></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -30,8 +52,8 @@
                     <a id="btn-cupcake" href="#" class="btn btn-primary">comprar</a>
                 </figcaption>
             </figure>
-            <figure class="card p-1 m-1">
-                <img class="card-img-top" src="img/pan.jpg" alt="pan">
+            <figure class="card col-12 col-sm-6 col-md-3">
+                <img class="card-img-top img-fluid" src="img/pan.jpg" alt="pan">
                 <figcaption class="card-body col-auto text-center p-1">
                     <h5 id="PanHTML" class="card-title m-0"></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -39,8 +61,8 @@
                     <a id="btn-pan" href="#" class="btn btn-primary">comprar</a>
                 </figcaption>
             </figure>
-            <figure class="card p-1 m-1">
-                <img class="card-img-top" src="img/sandwich.jpg" alt="sandwich">
+            <figure class="card col-12 col-sm-6 col-md-3">
+                <img class="card-img-top img-fluid" src="img/sandwich.jpg" alt="sandwich">
                 <figcaption class="card-body col-auto text-center p-1">
                     <h5 id="SandwichHTML" class="card-title"></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -48,8 +70,8 @@
                     <a id="btn-sandwich" href="#" class="btn btn-primary">comprar</a>
                 </figcaption>
             </figure>
-            <figure class="card p-1 m-1">
-                <img class="card-img-top" src="img/torta.jpg" alt="torta">
+            <figure class="card col-12 col-sm-6 col-md-3">
+                <img class="card-img-top img-fluid" src="img/torta.jpg" alt="torta">
                 <figcaption class="card-body col-auto text-center p-1">
                     <h5 id="TortaHTML" class="card-title"></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -57,42 +79,33 @@
                     <a id="btn-torta" href="#" class="btn btn-primary">comprar</a>
                 </figcaption>
             </figure>
-        </section>
-        <section>
-            <div class="carrito">
-                <h2 class="cupcacke"></h2>
-                <h2 class="pan"></h2>
-                <h2 class="sandwich"></h2>
-                <h2 class="torta"></h2>
-            </div>
-            <form action="">
-                <input type="tipo" id="identificador" size="tamaño" name="nombre" value="texto por defecto" />
-                <input type="text" id="email" name="email" size="70" value="usuario@dominio.com" />
-                <input type="password" id="identificador" size="tamaño" name="nombre"/>
-                <input type="password" id="clave" name="clave" size="20"/>
-                <input type="checkbox" id="identificador" name="nombre"/>
-                <input type="checkbox" id="identificador" name="nombre" checked="checked"/>
-                <input type="checkbox" id="identificador" name="nombre" checked="checked"/>
-                Texto del checkbox
-                <input type="checkbox" id="condiciones" name="condiciones"/>Está de acuerdo con las condiciones explicadas más arriba.
-                <input type="checkbox" name="lenguaje" value="html">HTML
-                <input type="checkbox" name="lenguaje" value="javascript">Javascript
-                <input type="checkbox" name="lenguaje" value="css">CSS
-                <input type="checkbox" name="lenguaje" value="xml">XML
-                <input type="radio" id="identificador" value="valor" name="nombre"/>
-                <input type="radio" id="menos18" value="menos18" name="edad"/>Menos de 18
-                <input type="radio" id="18a30" value="18a30" name="edad"/>18 a 30
-                <input type="radio" id="31a50" value="31a50" name="edad"/>31 a 50
-                <input type="radio" id="mas50" value="mas50" name="edad"/>Más de 50
-                <input type="radio" id="identificador" value="valor" name="nombre" checked="checked"/>
-                <input type="file" id="identificador" value="valor" name="nombre"/>
-                <input type="hidden" id="identificador" value="valor" name="nombre"/>
-                <input type="image" src="url-image" name="nombre" alt="texto-alternativo"/>
-
-            </form>
-        </section>
-    </main>
-
+        </div>
+    </section>
+    <section>
+        <div class="carrito">
+            <h2 class="cupcacke"></h2>
+            <h2 class="pan"></h2>
+            <h2 class="sandwich"></h2>
+            <h2 class="torta"></h2>
+        </div>
+    </section>
+    <section class="container">
+        <form id="contactar" class="row" action="">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+             </div>            
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+               </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
 
     <script src="js/app.js"></script>
 </body>

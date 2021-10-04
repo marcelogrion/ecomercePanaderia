@@ -50,6 +50,29 @@ function fScrollMove(what)
         document.getElementById(what).scrollTop = hidScroll.value;
 }
 
+// Menu hamburguesa comienzo
+
+// creo hamburguesa, primero los divs
+let divContenedor = document.createElement('div');
+
+let header = document.querySelector('header');
+header.appendChild(divContenedor);
+
+console.log(header)
+divContenedor.innerHTML = 
+`
+<div></div>
+<div></div>
+<div></div>
+`;
+
+divContenedor.addEventListener('click', () => {
+let navUl = document.querySelector('nav');
+navUl.classList.toggle('openMenu');
+    divContenedor.classList.toggle('menuX'); 
+});
+
+//Menu hamburgueza final
 
 
 /*
